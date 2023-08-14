@@ -6,7 +6,9 @@ let icon = new Image();
 
 async function getWeather(location) {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=44e5ced3f96a4b39b65171123231308&q=${location}&aqi=no`);
+        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=44e5ced3f96a4b39b65171123231308&q=${location}&aqi=no`, {
+            mode: 'cors'
+        });
         const weatherData = await response.json();
         displayData(weatherData);
         loadedData = weatherData;
