@@ -1,0 +1,40 @@
+html {
+    height: auto;
+    min-height: 100%;
+    background-size:cover;
+}
+
+body {
+    background-color:lavender;
+}
+
+body.bg {
+    min-height:100vh;
+}
+
+.search {
+    background: #ea5050;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.resultsContainer {
+    background-color: rgba(96, 96, 96, 0.8);
+    padding: 15px;
+    margin: 15px;
+    border-radius:10px;
+}
+
+#tempbtn {
+    float:right;
+}
+
+h1 {
+    margin-top:0;
+    margin-bottom:0;
+    font-size:50px;
+}
+
+h3 {
+    margin-top:0;
+}
