@@ -18,7 +18,6 @@ async function getWeather(location) {
 }
 
 const displayData = (data) => {
-    console.log(data.location.localtime.split(" ")[1].split(":"));
     let locationName = data.location.name;
     let countryName = data.location.country;
     let currentTemp = temperatureButton.innerText == "C" ? `${data.current.temp_c}°` : `${data.current.temp_f}°`;;
@@ -51,7 +50,6 @@ const switchTemperatureDisplayed = (loadedData, currentSelection) => {
 
 const checkTime = (time) => {
     let hour = time.split(":")[0];
-    console.log(hour);
     if(hour > 20 || hour < 7) {
         background.setAttribute('style',`background: url('sources/images/nighttime.jpeg') no-repeat center;`)
         document.querySelector('.resultsContainer').setAttribute('style','color:white;')
